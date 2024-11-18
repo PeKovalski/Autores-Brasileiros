@@ -1,99 +1,91 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #e8d3b9;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fdf5e6;
+    color: #333;
+}
+
+/* Header */
 .header {
-    background-color: #d9c2a3;
+    background-color: #dcc8b6;
     padding: 20px;
-    text-align: right;
-    width: 100%;
-    position: relative;
-}
-
-.header .search-container {
-    display: inline-block;
-    position: relative;
-}
-
-.header input {
-    font-size: 20px;
-    padding: 5px;
-    border: none;
-    border-bottom: 2px solid #000;
-    background: none;
-    outline: none;
-}
-
-.header .search-icon {
-    position: absolute;
-    right: -30px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-}
-
-.section {
-    width: 80%;
-    margin: 20px 0;
     text-align: center;
 }
 
-.banner img {
-    width: 100%;
-    max-width: 800px;
+.header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    color: #5a3921;
 }
 
-.main-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin: 20px 0;
+.search-bar {
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid #5a3921;
+    border-radius: 5px;
 }
 
-.books, .authors {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 0 20px;
-    flex-wrap: wrap;
-}
-
-.book, .author {
-    background-color: #f5e4c3;
+/* Main Content */
+.main {
     padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.book img, .author img {
-    width: 100px;
+.intro h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Grid de livros */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.book {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+    max-width: 100%;
     height: auto;
-    float: left;
-    margin-right: 20px;
+    display: block;
+    margin: 0 auto;
 }
 
-.book h3, .author-info h2 {
-    font-size: 18px;
-    margin: 0 0 10px 0;
+.book h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #5a3921;
 }
 
-.book p, .author-info p {
-    font-size: 14px;
-    margin: 0;
+.book p {
+    font-size: 0.9rem;
+    color: #555;
 }
 
+/* Footer */
 .footer {
+    background-color: #dcc8b6;
+    text-align: center;
+    padding: 10px;
     margin-top: 20px;
+    color: #5a3921;
+    font-size: 0.9rem;
 }
-
-.footer i {
-    font-size: 2em;
-    margin: 0 10px;
-}
-
