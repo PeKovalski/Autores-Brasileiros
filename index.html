@@ -7,40 +7,63 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Cabeçalho com Banner -->
     <header class="header">
-        <div class="container">
+        <div class="banner">
             <h1>Literatura Brasileira</h1>
-            <input type="text" placeholder="Busca..." class="search-bar">
+            <p class="subtitle">Uma jornada pelos clássicos inesquecíveis da nossa literatura.</p>
+            <div class="search-container">
+                <input type="text" placeholder="Digite aqui para buscar..." class="search-bar">
+                <button class="search-button">
+                    🔍
+                </button>
+            </div>
         </div>
     </header>
 
+    <!-- Seção de Introdução -->
     <main class="main">
         <section class="intro">
-            <h2>Principais livros</h2>
+            <h2>Principais Livros</h2>
+            <p class="section-description">Explore as obras mais marcantes da literatura brasileira e seus autores lendários.</p>
         </section>
 
+        <!-- Grade de Livros -->
         <section class="book-grid">
+            <!-- Livro 1 -->
             <article class="book">
                 <img src="macunaima.png" alt="Macunaíma, 1928">
-                <h3>Macunaíma (1928)</h3>
-                <p>Por Mário de Andrade, este livro explora a identidade do brasileiro.</p>
+                <div class="book-info">
+                    <h3>Macunaíma (1928)</h3>
+                    <p>A obra de Mário de Andrade explora a identidade brasileira de forma única.</p>
+                </div>
             </article>
+
+            <!-- Livro 2 -->
             <article class="book">
                 <img src="sitio.png" alt="O Sítio do Picapau Amarelo">
-                <h3>O Sítio do Pica-pau Amarelo</h3>
-                <p>De Monteiro Lobato, uma das obras mais clássicas da literatura infantil brasileira.</p>
+                <div class="book-info">
+                    <h3>O Sítio do Pica-pau Amarelo</h3>
+                    <p>Monteiro Lobato eternizou histórias infantis que moldaram gerações.</p>
+                </div>
             </article>
+
+            <!-- Livro 3 -->
             <article class="book">
                 <img src="o_cortico.png" alt="O Cortiço">
-                <h3>O Cortiço (1890)</h3>
-                <p>Uma narrativa realista de Aluísio Azevedo, explorando desigualdades sociais.</p>
+                <div class="book-info">
+                    <h3>O Cortiço (1890)</h3>
+                    <p>Aluísio Azevedo apresenta uma narrativa realista sobre desigualdades sociais.</p>
+                </div>
             </article>
-            <!-- Adicione mais livros aqui -->
+
+            <!-- Adicione mais livros conforme necessário -->
         </section>
     </main>
 
+    <!-- Rodapé -->
     <footer class="footer">
-        <p>&copy; 2024 Literatura Brasileira</p>
+        <p>&copy; 2024 Literatura Brasileira. Desenvolvido com ❤️.</p>
     </footer>
 </body>
 </html>
