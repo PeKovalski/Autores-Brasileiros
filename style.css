@@ -1,76 +1,94 @@
+/* Estilo geral da página */
 body {
-    background-color: #d8c3a5;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .header img {
-    width: 100%;
-    max-width: 800px;
-    border: 2px solid #000;
-    style="display: grid; place-items: center; height: 100vh;">
-  }
-  
-  .search-bar {
-    text-align: right;
-    padding: 10px 20px;
-    font-family: 'Amatic SC', cursive;
-    font-size: 24px;
-  }
-  
-  .search-bar input {
-    border: none;
-    border-bottom: 2px solid #000;
-    background: none;
-    font-size: 24px;
-    font-family: 'Amatic SC', cursive;
-  }
-  
-  .search-bar i {
-    margin-left: 10px;
-  }
-  
-  .main-title {
-    text-align: center;
-    font-family: 'Amatic SC', cursive;
-    font-size: 48px;
-    margin: 20px 0;
-  }
-  
-  .books {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .book {
-    background-color: #f4f4f4;
-    padding: 20px;
-    margin: 0 10px;
-    border-radius: 10px;
-    width: 600px;
-    display: flex;
-  }
-  
-  .book img {
-    width: 150px;
-    height: auto;
-    border-radius: 5px;
-    margin-right: 20px;
-  }
-  
-  .book-title {
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  .book-description {
-    font-size: 14px;
-  }
-  
+  background-color: #d8c3a5; /* Cor de fundo */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilização do cabeçalho */
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.header img {
+  width: 100%;
+  max-width: 800px;
+  border: 2px solid #000;
+  display: block; /* Corrigido para centralizar corretamente */
+  margin: 0 auto;
+}
+
+/* Barra de busca */
+.search-bar {
+  text-align: right;
+  padding: 10px 20px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
+}
+
+.search-bar input {
+  border: none;
+  border-bottom: 2px solid #000;
+  background: none;
+  font-size: 24px;
+  font-family: 'Amatic SC', cursive;
+  outline: none; /* Remove o contorno azul ao clicar */
+}
+
+.search-bar i {
+  margin-left: 10px;
+}
+
+/* Título principal */
+.main-title {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+/* Grade de livros */
+.books {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que os itens ocupem várias linhas, se necessário */
+  padding: 20px;
+  gap: 20px; /* Espaçamento entre os livros */
+}
+
+.book {
+  background-color: #f4f4f4; /* Cor de fundo dos livros */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px; /* Tamanho fixo para livros */
+  display: flex;
+  flex-direction: column; /* Alinha conteúdo verticalmente */
+  align-items: center; /* Centraliza o conteúdo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  transition: transform 0.2s ease; /* Efeito de hover */
+}
+
+.book:hover {
+  transform: scale(1.05); /* Amplia ligeiramente no hover */
+}
+
+.book img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.book-title {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.book-description {
+  font-size: 14px;
+  text-align: justify; /* Texto alinhado à esquerda e à direita */
+}
